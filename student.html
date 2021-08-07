@@ -1,0 +1,2035 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+      <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link rel="manifest" href="/manifest.json">
+      <link rel="icon" href="elearning.png" type="image/png">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+      <meta name="theme-color" content="#ffffff">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <title>Filter Data | 3rd</title>
+   </head>
+   <body>
+      <div class="container mt-3">
+         <br>
+         <!-- Nav tabs -->
+         <ul class="nav nav-tabs">
+            <li class="nav-item">
+               <a class="nav-link active" data-toggle="tab" href="#home">Computer Science</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" data-toggle="tab" href="#menu1">Mechanical Engg.</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" data-toggle="tab" href="#menu2">Civil Engg.</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" data-toggle="tab" href="#menu3">Electrical Engg.</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" data-toggle="tab" href="#menu4">Architecture</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" data-toggle="tab" href="#menu5">Faculty</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" data-toggle="tab" href="#menu6">Courses</a>
+            </li>
+         </ul>
+         <!-- Tab panes -->
+         <div class="tab-content">
+            <div id="home" class="container tab-pane active">
+               <br>
+               <div class="container">
+                  <center>
+                     <h2>Computer Science and Engg.</h2>
+                  </center>
+                  <p>Note : Type Branch name and something in the input field to search the table for name, roll no or emails:</p>
+                  <input class="form-control" id="myInput" type="text" placeholder="Search...">
+                  <br>
+                  <table class="table table-bordered table-striped">
+                     <thead>
+                        <tr>
+                           <th>S.No</th>
+                           <th>Roll.No</th>
+                           <th>Name</th>
+                           <th>Branch</th>
+                           <th>Email</th>
+                        </tr>
+                     </thead>
+                     <tbody id="myTable">
+                        <tr>
+                           <td>1.</td>
+                           <td>1851110001</td>
+                           <td>Abhay Agrawal</td>
+                           <td>CSE</td>
+                           <td>agrawalabhay72@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>2.</td>
+                           <td>1851110002</td>
+                           <td>Abhishek Kumar Singh</td>
+                           <td>CSE</td>
+                           <td>abhi85506@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>3.</td>
+                           <td>1851110003</td>
+                           <td>Abhuday Sharma</td>
+                           <td>CSE</td>
+                           <td>abhudaysharma16@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>4.</td>
+                           <td>1851110004</td>
+                           <td>Aditya Shrivastava</td>
+                           <td>CSE</td>
+                           <td>aditya090shrivastava@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>5.</td>
+                           <td>1851110005</td>
+                           <td>Akash Vats</td>
+                           <td>CSE</td>
+                           <td>vatsakash117@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>6.</td>
+                           <td>1905110109001</td>
+                           <td>Akshay Singh</td>
+                           <td>CSE</td>
+                           <td>akshaysinmar@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>7.</td>
+                           <td>1851110007</td>
+                           <td>Aman Sharma</td>
+                           <td>CSE</td>
+                           <td>cs18007@glbajajgroup.org</td>
+                        </tr>
+                        <tr>
+                           <td>8.</td>
+                           <td>1851110006</td>
+                           <td>Aman Singh</td>
+                           <td>CSE</td>
+                           <td>amansinghsingh329@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>9.</td>
+                           <td>1851110010</td>
+                           <td>Anoop Pandey</td>
+                           <td>CSE</td>
+                           <td>anooppandey282000@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>10.</td>
+                           <td>1851110011</td>
+                           <td>Anshul</td>
+                           <td>CSE</td>
+                           <td>anshul1122sharma@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>11.</td>
+                           <td>1851110012</td>
+                           <td>Anuj</td>
+                           <td>CSE</td>
+                           <td>anujbhardwaj9675@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>12.</td>
+                           <td>1851110013</td>
+                           <td>Ashwer Agrawal</td>
+                           <td>CSE</td>
+                           <td>ashweragrawal625@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>13.</td>
+                           <td>1851110014</td>
+                           <td>Bhargav Kumar</td>
+                           <td>CSE</td>
+                           <td>singhbhargav6@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>14.</td>
+                           <td>1851110015</td>
+                           <td>Bindu Shekhar</td>
+                           <td>CSE</td>
+                           <td>shekharbindu2016@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>15.</td>
+                           <td>1851110016</td>
+                           <td>Chirag Goyal</td>
+                           <td>CSE</td>
+                           <td>chiraggoyaldeeg@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>16.</td>
+                           <td>1851110017</td>
+                           <td>Deepa Gc</td>
+                           <td>CSE</td>
+                           <td>deepagc7417@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>17.</td>
+                           <td>1851110018</td>
+                           <td>Dev Tatsat</td>
+                           <td>CSE</td>
+                           <td>devtatsat@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>18.</td>
+                           <td>1851110019</td>
+                           <td>Devesh Keshari</td>
+                           <td>CSE</td>
+                           <td>deveshkeshari11@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>19.</td>
+                           <td>1851110048</td>
+                           <td>Dhanbad</td>
+                           <td>CSE</td>
+                           <td>utsav3500@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>20.</td>
+                           <td>1851110020</td>
+                           <td>Dhawal Rastogi</td>
+                           <td>CSE</td>
+                           <td>dhawalr40@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>21.</td>
+                           <td>1851110021</td>
+                           <td>Diksha Upadhyay</td>
+                           <td>CSE</td>
+                           <td>dikshaupadhyay202000@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>22.</td>
+                           <td>1851110022</td>
+                           <td>Divya Singh</td>
+                           <td>CSE</td>
+                           <td>DIVYASINGH1066@GMAIL.COM</td>
+                        </tr>
+                        <tr>
+                           <td>23.</td>
+                           <td>1851110023</td>
+                           <td>Diwakar Rawat</td>
+                           <td>CSE</td>
+                           <td>kunjrawat500@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>24.</td>
+                           <td>1851110024</td>
+                           <td>Eshan Sharma</td>
+                           <td>CSE</td>
+                           <td>eshan245304@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>25.</td>
+                           <td>1851110026</td>
+                           <td>Gauransh Singhal</td>
+                           <td>CSE</td>
+                           <td>gauranshagrawal334@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>26.</td>
+                           <td>1851110027</td>
+                           <td>Gaurav Agrawal</td>
+                           <td>CSE</td>
+                           <td>gauravagrawal9437@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>27.</td>
+                           <td>1851110029</td>
+                           <td>Gaurav Shahi</td>
+                           <td>CSE</td>
+                           <td>gauravshahi319@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>28.</td>
+                           <td>1851110030</td>
+                           <td>Girish Kumar Goyal</td>
+                           <td>CSE</td>
+                           <td>girishgoyal15144214@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>29.</td>
+                           <td>1905110100050</td>
+                           <td>Gurleen Kaur</td>
+                           <td>CSE</td>
+                           <td>gurleen.kxur@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>30.</td>
+                           <td>1851110031</td>
+                           <td>Harsh Kumar</td>
+                           <td>CSE</td>
+                           <td>helloharshgupta@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>31.</td>
+                           <td>1851110032</td>
+                           <td>Hemant KumarAgrawal</td>
+                           <td>CSE</td>
+                           <td>hemantagrawal1808@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>32.</td>
+                           <td>1851110033</td>
+                           <td>Himanshi Gupta</td>
+                           <td>CSE</td>
+                           <td>himanshigupta9981998@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>33.</td>
+                           <td>1851110034</td>
+                           <td>Himanshu Rawat</td>
+                           <td>CSE</td>
+                           <td>himanshurawat.tech@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>34.</td>
+                           <td>1851110035</td>
+                           <td>Ishan Gupta</td>
+                           <td>CSE</td>
+                           <td>ishangupta8909@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>35.</td>
+                           <td>1851110036</td>
+                           <td>Jatin Soni</td>
+                           <td>CSE</td>
+                           <td>jatin2951@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>36.</td>
+                           <td>1851110037</td>
+                           <td>Jhalak Saxena</td>
+                           <td>CSE</td>
+                           <td>jhalak2000saxena@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>37.</td>
+                           <td>1851110038</td>
+                           <td>Jigyasa Arora</td>
+                           <td>CSE</td>
+                           <td>arorajigyasa999@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>38.</td>
+                           <td>1851110039</td>
+                           <td>Jitendra Kaushik</td>
+                           <td>CSE</td>
+                           <td>jitendrakaushik87@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>39.</td>
+                           <td>1851110040</td>
+                           <td>Kamal Singh</td>
+                           <td>CSE</td>
+                           <td>baghelkamal198@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>40.</td>
+                           <td>1851110041</td>
+                           <td>Kanika Nagar</td>
+                           <td>CSE</td>
+                           <td>kanikanagar2411@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>41.</td>
+                           <td>1851110042</td>
+                           <td>Kapil Upadhyaya</td>
+                           <td>CSE</td>
+                           <td>kapilupadhyay2001@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>42.</td>
+                           <td>1851110043</td>
+                           <td>Kashish Agrawal</td>
+                           <td>CSE</td>
+                           <td>surmam28@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>43.</td>
+                           <td>1851110044</td>
+                           <td>Kishan Kumar Jha</td>
+                           <td>CSE</td>
+                           <td>kishanbts3232@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>44.</td>
+                           <td>1851110047</td>
+                           <td>Kratagya Agarwal</td>
+                           <td>CSE</td>
+                           <td>kratagyaagarwal2262@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>45.</td>
+                           <td>1851110049</td>
+                           <td>Kundan Kumar Ojha</td>
+                           <td>CSE</td>
+                           <td>aryagmast111@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>46.</td>
+                           <td>1851110051</td>
+                           <td>Luv Kumar Singh</td>
+                           <td>CSE</td>
+                           <td>srishu623@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>47.</td>
+                           <td>1851110052</td>
+                           <td>Madhavam Saxena</td>
+                           <td>CSE</td>
+                           <td>madhavamsaxena14@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>48.</td>
+                           <td>1851110053</td>
+                           <td>Manoj Samaddar</td>
+                           <td>CSE</td>
+                           <td>immanoj8052@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>49.</td>
+                           <td>1851110054</td>
+                           <td>Mohan Hamal</td>
+                           <td>CSE</td>
+                           <td>cs18054@glbajajgroup.org</td>
+                        </tr>
+                        <tr>
+                           <td>50.</td>
+                           <td>1851110055</td>
+                           <td>Mohd Suhail</td>
+                           <td>CSE</td>
+                           <td>suhail4rdj@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>51.</td>
+                           <td>1851110056</td>
+                           <td>Mohd Tariq Khan</td>
+                           <td>CSE</td>
+                           <td>kasabpathan0123@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>52.</td>
+                           <td>1851110058</td>
+                           <td>Muskan Arora</td>
+                           <td>CSE</td>
+                           <td>cs18058@glbajajgroup.org</td>
+                        </tr>
+                        <tr>
+                           <td>53.</td>
+                           <td>1851110059</td>
+                           <td>Naman Arora</td>
+                           <td>CSE</td>
+                           <td>arora.naman1805@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>54.</td>
+                           <td>1851110060</td>
+                           <td>Nandita Chahal</td>
+                           <td>CSE</td>
+                           <td>chahalnandita@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>55.</td>
+                           <td>1851110061</td>
+                           <td>Naveen Kumar Mittal</td>
+                           <td>CSE</td>
+                           <td>naveenmittal2104@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>56.</td>
+                           <td>1851110062</td>
+                           <td>Navneet Gupta</td>
+                           <td>CSE</td>
+                           <td>guptanavneet986@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>57.</td>
+                           <td>1851110063</td>
+                           <td>Nikhil Goyal</td>
+                           <td>CSE</td>
+                           <td>goyalnikhil743@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>58.</td>
+                           <td>1905110109002</td>
+                           <td>Nikhil Kaushik</td>
+                           <td>CSE</td>
+                           <td>nikhilkau7351@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>59.</td>
+                           <td>1851110065</td>
+                           <td>Nishant Sharma</td>
+                           <td>CSE</td>
+                           <td>cs18065@glbajajgroup.org</td>
+                        </tr>
+                        <tr>
+                           <td>60.</td>
+                           <td>1851110066</td>
+                           <td>Nishkarsh Sharma</td>
+                           <td>CSE</td>
+                           <td>nishkarshs93@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>61.</td>
+                           <td>1851110067</td>
+                           <td>Nitesh</td>
+                           <td>CSE</td>
+                           <td>niteshsinghrajpoot75@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>62.</td>
+                           <td>1851110068</td>
+                           <td>Palash Sharma</td>
+                           <td>CSE</td>
+                           <td>palashsharma359@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>63.</td>
+                           <td>1851110069</td>
+                           <td>Pankaj Verma</td>
+                           <td>CSE</td>
+                           <td>pv24aug2001@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>64.</td>
+                           <td>1851110070</td>
+                           <td>Pranjul Gupta</td>
+                           <td>CSE</td>
+                           <td>pranjul9838@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>65.</td>
+                           <td>1851110071</td>
+                           <td>Prashant SinghChandel</td>
+                           <td>CSE</td>
+                           <td>prashantsingh00700@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>66</td>
+                           <td>1851110072</td>
+                           <td>Priya Chaturvedi</td>
+                           <td>CSE</td>
+                           <td>priyachaturvedi285@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>67.</td>
+                           <td>1851110073</td>
+                           <td>Rajat Kumar</td>
+                           <td>CSE</td>
+                           <td>rajat000kmr@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>68.</td>
+                           <td>1851110074</td>
+                           <td>Randhir Chaudhary</td>
+                           <td>CSE</td>
+                           <td>randhirchaudhary333@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>69.</td>
+                           <td>1851110075</td>
+                           <td>Rashi Agrawal</td>
+                           <td>CSE</td>
+                           <td>rashiagrawal0608@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>70.</td>
+                           <td>1851110077</td>
+                           <td>Ravi Mishra</td>
+                           <td>CSE</td>
+                           <td>ravirmishra2995898@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>71.</td>
+                           <td>1851110078</td>
+                           <td>Ravi Singh</td>
+                           <td>CSE</td>
+                           <td>rssingh8736@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>72.</td>
+                           <td>1851110076</td>
+                           <td>Ravi Solanki</td>
+                           <td>CSE</td>
+                           <td>ravi.solanki.bittu9876@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>73.</td>
+                           <td>1851110079</td>
+                           <td>Rishabh Bhargava</td>
+                           <td>CSE</td>
+                           <td>rishabhbhargava3597@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>74.</td>
+                           <td>1751110085</td>
+                           <td>Rishabh Yadav</td>
+                           <td>CSE</td>
+                           <td>rishabhyadavcry7@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>75.</td>
+                           <td>1851110080</td>
+                           <td>Rishi Raj Singh</td>
+                           <td>CSE</td>
+                           <td>rishirajsingh166@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>76.</td>
+                           <td>1851110081</td>
+                           <td>Riten Basoya</td>
+                           <td>CSE</td>
+                           <td>riten302000@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>77.</td>
+                           <td>1851110082</td>
+                           <td>Ritika</td>
+                           <td>CSE</td>
+                           <td>ritikakumar43@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>78.</td>
+                           <td>1851110083</td>
+                           <td>Riya Agrawal</td>
+                           <td>CSE</td>
+                           <td>agrawalriyak@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>79.</td>
+                           <td>1851110084</td>
+                           <td>Saba Parveen</td>
+                           <td>CSE</td>
+                           <td>sp08465991@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>80.</td>
+                           <td>1851110085</td>
+                           <td>Sachin Dixit</td>
+                           <td>CSE</td>
+                           <td>sachindixit729@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>81.</td>
+                           <td>1851110086</td>
+                           <td>Sachin Yadav</td>
+                           <td>CSE</td>
+                           <td>sachinyadav9792258540@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>82.</td>
+                           <td>1851110087</td>
+                           <td>Sadain Kazmi</td>
+                           <td>CSE</td>
+                           <td>imsadain19@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>83.</td>
+                           <td>1851110089</td>
+                           <td>Sagar Kumar Gupta</td>
+                           <td>CSE</td>
+                           <td>sagarkumargupta1998@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>84.</td>
+                           <td>1851110088</td>
+                           <td>Sagar Mudgal</td>
+                           <td>CSE</td>
+                           <td>Sagar2000mudgal@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>85.</td>
+                           <td>1851110090</td>
+                           <td>Sahil Kumar</td>
+                           <td>CSE</td>
+                           <td>sahilchaudhary2121@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>86.</td>
+                           <td>1851110091</td>
+                           <td>Sarthak R Sharan</td>
+                           <td>CSE</td>
+                           <td>sarthaksharan102@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>87.</td>
+                           <td>1851110092</td>
+                           <td>Sashank Kumar Singh</td>
+                           <td>CSE</td>
+                           <td>sashank3232@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>88.</td>
+                           <td>1851110093</td>
+                           <td>Satyam</td>
+                           <td>CSE</td>
+                           <td>d.satyam1811@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>89.</td>
+                           <td>1851110094</td>
+                           <td>Saurabh Kumar</td>
+                           <td>CSE</td>
+                           <td>99saurabh999@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>90.</td>
+                           <td>1851110095</td>
+                           <td>Saurav</td>
+                           <td>CSE</td>
+                           <td>Sauravthakur847707@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>91.</td>
+                           <td>1851110096</td>
+                           <td>Shivaksh Ahalawat</td>
+                           <td>CSE</td>
+                           <td>sh793885@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>92.</td>
+                           <td>1851110097</td>
+                           <td>Shivam Dubey</td>
+                           <td>CSE</td>
+                           <td>d.shivam1507@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>93.</td>
+                           <td>1851110098</td>
+                           <td>Shivam Kumar</td>
+                           <td>CSE</td>
+                           <td>shivam152000kmr@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>94.</td>
+                           <td>1851110099</td>
+                           <td>Shivendra KumarGond</td>
+                           <td>CSE</td>
+                           <td>shivendracpj@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>95.</td>
+                           <td>1851110100</td>
+                           <td>Shobhit Rajawat</td>
+                           <td>CSE</td>
+                           <td>rajawatshobhit4@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>96.</td>
+                           <td>1851110045</td>
+                           <td>Shraddha Gupta</td>
+                           <td>CSE</td>
+                           <td>shraddhagupta475@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>97.</td>
+                           <td>1851110101</td>
+                           <td>Shrikant Pandey</td>
+                           <td>CSE</td>
+                           <td>sharmashri54321@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>98.</td>
+                           <td>1851110102</td>
+                           <td>Shubham</td>
+                           <td>CSE</td>
+                           <td>shubhamray334@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>99.</td>
+                           <td>1851110103</td>
+                           <td>Shubham Juneja</td>
+                           <td>CSE</td>
+                           <td>shubhamjuneja412@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>100.</td>
+                           <td>1851110104</td>
+                           <td>Sudhakar Gupta</td>
+                           <td>CSE</td>
+                           <td>sud.gupta04@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>101.</td>
+                           <td>1851110105</td>
+                           <td>Suneel</td>
+                           <td>CSE</td>
+                           <td>suneelthakurraheda@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>102.</td>
+                           <td>1851110106</td>
+                           <td>Suraj Agrawal</td>
+                           <td>CSE</td>
+                           <td>surajagarwal920@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>103.</td>
+                           <td>1851110107</td>
+                           <td>Tabarak Ansari</td>
+                           <td>CSE</td>
+                           <td>tabarakansari0786@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>104.</td>
+                           <td>1851110108</td>
+                           <td>Tarun Kumar</td>
+                           <td>CSE</td>
+                           <td>tarunsharma8299@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>105.</td>
+                           <td>1851110109</td>
+                           <td>Tushar Bhayana</td>
+                           <td>CSE</td>
+                           <td>tusharb889@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>106.</td>
+                           <td>1851110110</td>
+                           <td>Tushar Goyal</td>
+                           <td>CSE</td>
+                           <td>Tushargoyal5222@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>107.</td>
+                           <td>1851110111</td>
+                           <td>Udayveer Singh</td>
+                           <td>CSE</td>
+                           <td>udayveers446@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>108.</td>
+                           <td>1851110112</td>
+                           <td>Utkarsh Agarwal</td>
+                           <td>CSE</td>
+                           <td>Agarwalutkarsh554@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>109.</td>
+                           <td>1851110046</td>
+                           <td>Vaishali Gupta</td>
+                           <td>CSE</td>
+                           <td>guptavaishali733@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>110.</td>
+                           <td>1851110113</td>
+                           <td>Vansh Mittal</td>
+                           <td>CSE</td>
+                           <td>vanshmittal100@gmaill.com</td>
+                        </tr>
+                        <tr>
+                           <td>111.</td>
+                           <td>1851110114</td>
+                           <td>Vanshika Agrawal</td>
+                           <td>CSE</td>
+                           <td>vanshikakmps@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>112.</td>
+                           <td>1851110115</td>
+                           <td>Vardaan Raj Singh</td>
+                           <td>CSE</td>
+                           <td>singhvardaanraj@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>113.</td>
+                           <td>1851110116</td>
+                           <td>Vinay Kumar Gupta</td>
+                           <td>CSE</td>
+                           <td>sumar05082000@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>114.</td>
+                           <td>1851110117</td>
+                           <td>Vineet Yadav</td>
+                           <td>CSE</td>
+                           <td>pawanyadav1499@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>115.</td>
+                           <td>1851110118</td>
+                           <td>Vipul Goyal</td>
+                           <td>CSE</td>
+                           <td>vipulgoyal214.vg@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>116.</td>
+                           <td>1851110119</td>
+                           <td>Viraat Chaudhary</td>
+                           <td>CSE</td>
+                           <td>viraatchaudhary117@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>117.</td>
+                           <td>1851110121</td>
+                           <td>Vivek KumarUpadhyay</td>
+                           <td>CSE</td>
+                           <td>vivekbv256@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>118.</td>
+                           <td>1851110122</td>
+                           <td>Vivek Rana</td>
+                           <td>CSE</td>
+                           <td>vivekrana4132@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>119.</td>
+                           <td>1851110123</td>
+                           <td>Yash Agrawal</td>
+                           <td>CSE</td>
+                           <td>cs18123@glbajajgroup.org</td>
+                        </tr>
+                        <tr>
+                           <td>120.</td>
+                           <td>1851110124</td>
+                           <td>Yasharth Parihar</td>
+                           <td>CSE</td>
+                           <td>yasharthparihar945022@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <td>121.</td>
+                           <td>1851110125</td>
+                           <td>Yashi Agrawal</td>
+                           <td>CSE</td>
+                           <td>yashiagrawal74@gmail.com</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+            <div id="menu1" class="container tab-pane fade">
+               <br>
+               <div class="container">
+                  <center>
+                     <h2>Mechanical Engg.</h2>
+                  </center>
+                  <p>Note : Type Branch name and something in the input field to search the table for name, roll no or emails:</p>
+                  <input class="form-control" id="myInput2" type="text" placeholder="Search..">
+                  <br>
+                  <table class="table table-bordered table-striped">
+                     <thead>
+                        <tr>
+                           <th>S.No</th>
+                           <th>Roll.No.</th>
+                           <th>Name</th>
+                           <th>Branch</th>
+                           <th>Email</th>
+                        </tr>
+                     </thead>
+                     <tbody id="myTable2">
+                        <tr>
+                           <td>1.</td>
+                           <td>1851140001</td>
+                           <td>Ajit Kumar Yadav</td>
+                           <td>ME</td>
+                           <td><a href="mailto:aju.8090.yadav@gmail.com" target="_blank">aju.8090.yadav@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                           <td>2.</td>
+                           <td>1851140003</td>
+                           <td>Bhanu Pratap Tarkar</td>
+                           <td>ME</td>
+                           <td><a href="mailto:soryathakur360@gmail.com" target="_blank">soryathakur360@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                           <td>3.</td>
+                           <td>1851140004</td>
+                           <td>Bharat Gautam</td>
+                           <td>ME</td>
+                           <td><a href="mailto:bharatgautam108@gmail.com" target="_blank">bharatgautam108@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                           <td>4.</td>
+                           <td>1851140005</td>
+                           <td>Bhupendra SinghGautam</td>
+                           <td>ME</td>
+                           <td><a href="mailto:bhupendrasingh5114@gmail.com" target="_blank">bhupendrasingh5114@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                           <td>5.</td>
+                           <td>1751140013</td>
+                           <td>Chandan Singh Sonkar</td>
+                           <td>ME</td>
+                           <td><a href="mailto:chandansiddhu0143@gmail.com" target="_blank">chandansiddhu0143@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                           <td>6.</td>
+                           <td>1851140006</td>
+                           <td>Dhruv Sharma</td>
+                           <td>ME</td>
+                           <td><a href="mailto:sharmadhruv5411664@gmail.com" target="_blank">sharmadhruv5411664@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                           <td>7.</td>
+                           <td>1851140007</td>
+                           <td>Gaurav Kumar</td>
+                           <td>ME</td>
+                           <td><a href="mailto:kgaurav1998@gmail.com" target="_blank">kgaurav1998@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                           <td>8.</td>
+                           <td>1851140009</td>
+                           <td>Jitendra Chaudhary</td>
+                           <td>ME</td>
+                           <td><a href="mailto:chaudharyj270@gmail.com" target="_blank">chaudharyj270@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                           <td>9.</td>
+                           <td>1851140010</td>
+                           <td>Karn Singh</td>
+                           <td>ME</td>
+                           <td><a href="mailto:bharat.pippal1512@gmail.com" target="_blank">bharat.pippal1512@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                           <td>10.</td>
+                           <td>1851140011</td>
+                           <td>Krishna Pandey</td>
+                           <td>ME</td>
+                           <td><a href="mailto:8006315706kp@gmail.com" target="_blank">8006315706kp@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                           <td>11.</td>
+                           <td>1851140012</td>
+                           <td>Mantra Chadda</td>
+                           <td>ME</td>
+                           <td><a href="mailto:mantrabuddy420@gmail.com" target="_blank">mantrabuddy420@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                           <td>12.</td>
+                           <td>1905110409001</td>
+                           <td>Manu Sharma</td>
+                           <td>ME</td>
+                           <td><a href="mailto:mukultiwari1799@gmail.com" target="_blank">mukultiwari1799@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                           <td>13.</td>
+                           <td>1851140013</td>
+                           <td>Mohd Arshad Hussain</td>
+                           <td>ME</td>
+                           <td><a href="mailto:arshad282317@gmail.com" target="_blank">arshad282317@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                           <td>14.</td>
+                           <td>1905110409003</td>
+                           <td>Nipun Bhardwaj</td>
+                           <td>ME</td>
+                           <td><a href="mailto:nipunbhardwaj2515@gmail.com" target="_blank">nipunbhardwaj2515@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                           <td>15.</td>
+                           <td>1851140014</td>
+                           <td>Nitin Agrawal</td>
+                           <td>ME</td>
+                           <td><a href="mailto:nitinagrawal1526@gmail.com" target="_blank">nitinagrawal1526@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                           <td>16.</td>
+                           <td>1851140015</td>
+                           <td>Pavan</td>
+                           <td>ME</td>
+                           <td><a href="mailto:pavan706078@gmail.com" target="_blank">pavan706078@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                           <td>17.</td>
+                           <td>1851140017</td>
+                           <td>Pranshu Kaushal</td>
+                           <td>ME</td>
+                           <td><a href="mailto:kaushalpranshu665@gmail.com" target="_blank">kaushalpranshu665@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                           <td>18.</td>
+                           <td>1851140018</td>
+                           <td>Praveen Kumar</td>
+                           <td>ME</td>
+                           <td><a href="mailto:Praveenkumar24102002@gmail.com" target="_blank">Praveenkumar24102002@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                           <td>19.</td>
+                           <td>1851140020</td>
+                           <td>Rohit Rawat</td>
+                           <td>ME</td>
+                           <td><a href="mailto:rohitrawat8699@gmail.com" target="_blank">rohitrawat8699@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                           <td>20.</td>
+                           <td>1851140022</td>
+                           <td>Shamsher Ahmad</td>
+                           <td>ME</td>
+                           <td><a href="mailto:shamsherahmad988@gmail.com" target="_blank">shamsherahmad988@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                           <td>21.</td>
+                           <td>1851140023</td>
+                           <td>Shiva Badgujar</td>
+                           <td>ME</td>
+                           <td><a href="mailto:shivabad111@gmail.com" target="_blank">shivabad111@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                           <td>22.</td>
+                           <td>1851140024</td>
+                           <td>Shubham Singh</td>
+                           <td>ME</td>
+                           <td><a href="mailto:singharyansingh313@gmail.com" target="_blank">singharyansingh313@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                           <td>23.</td>
+                           <td>1851140025</td>
+                           <td>Shyam Sundar</td>
+                           <td>ME</td>
+                           <td><a href="mailto:shyamsundar1162000@gmail.com" target="_blank">shyamsundar1162000@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                           <td>24.</td>
+                           <td>1851140026</td>
+                           <td>Udayveer Singh</td>
+                           <td>ME</td>
+                           <td><a href="mailto:udayveersingh2312@gmail.com" target="_blank">udayveersingh2312@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                           <td>25.</td>
+                           <td>1851140027</td>
+                           <td>Utkarsh Kumar Singh</td>
+                           <td>ME</td>
+                           <td><a href="mailto:utkarshkumar2645@gmail.com" target="_blank">utkarshkumar2645@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                           <td>26.</td>
+                           <td>1851140028</td>
+                           <td>Vishnu Singh</td>
+                           <td>ME</td>
+                           <td><a href="mailto:vishnu554145@gmail.com" target="_blank">vishnu554145@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                           <td>27.</td>
+                           <td>1851140029</td>
+                           <td>Yash Srivastava</td>
+                           <td>ME</td>
+                           <td><a href="mailto:yashsrivastava613@gmail.com" target="_blank">yashsrivastava613@gmail.com</a></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+            <!-- Civil Students -->
+            <div id="menu2" class="container tab-pane fade">
+               <br>
+               <div class="container">
+                  <center>
+                     <h2>Civil Engg.</h2>
+                  </center>
+                  <p>Note : Type Branch name and something in the input field to search the table for name, roll no or emails:</p>
+                  <input class="form-control" id="myInput1" type="text" placeholder="Search..">
+                  <br>
+                  <table class="table table-bordered table-striped">
+                     <thead>
+                        <tr>
+                           <th>S.No</th>
+                           <th>Roll.No</th>
+                           <th>Name</th>
+                           <th>Branch</th>
+                           <th>Email</th>
+                        </tr>
+                     </thead>
+                     <tbody id="myTable1">
+                        <tr>
+                           <td>1.</td>
+                           <td>1851100002</td>
+                           <td>Chandra Mohan Upadhyay</td>
+                           <td>Civil</td>
+                           <td><a href="mailto:rsha9605@gmail.com" target="_blank">rsha9605@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                           <td>2.</td>
+                           <td>1851100003</td>
+                           <td>Harsh Upadhyay</td>
+                           <td>Civil</td>
+                           <td><a href="mailto:harshupadhyay9675@gmail.com" target="_blank">harshupadhyay9675@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                           <td>3.</td>
+                           <td>1851100004</td>
+                           <td>Kartik Parashar</td>
+                           <td>Civil</td>
+                           <td><a href="mailto:kartikparashar19980@gmail.com" target="_blank">kartikparashar19980@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                           <td>4.</td>
+                           <td>1851100005</td>
+                           <td>Mohan Kumar</td>
+                           <td>Civil</td>
+                           <td><a href="mailto:mkumarglb@gmail.com" target="_blank">mkumarglb@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                           <td>5.</td>
+                           <td>1851100006</td>
+                           <td>Prem Chand</td>
+                           <td>Civil</td>
+                           <td><a href="mailto:premchand15006@gmail.com" target="_blank">premchand15006@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                           <td>6.</td>
+                           <td>1905110009001</td>
+                           <td>Rahul</td>
+                           <td>Civil</td>
+                           <td><a href="mailto:srony9557@gmail.com" target="_blank">srony9557@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                           <td>7.</td>
+                           <td>1905110009002</td>
+                           <td>Rahul Singh</td>
+                           <td>Civil</td>
+                           <td><a href="mailto:singhrahul37312@gmail.com" target="_blank">singhrahul37312@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                           <td>8.</td>
+                           <td>1851100007</td>
+                           <td>Sivesh Rai</td>
+                           <td>Civil</td>
+                           <td><a href="mailto:shiveshrai39@gmail.com" target="_blank">shiveshrai39@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                           <td>9.</td>
+                           <td>1851100008</td>
+                           <td>Shushant Singh</td>
+                           <td>Civil</td>
+                           <td><a href="mailto:shushantsingh8998628@gmail.com" target="_blank">shushantsingh8998628@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                           <td>10.</td>
+                           <td>1905110009003</td>
+                           <td>Vibhanshu Singh</td>
+                           <td>Civil</td>
+                           <td><a href="mailto:vibhanshusingh2012@gmail.com" target="_blank">vibhanshusingh2012@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                           <td>11.</td>
+                           <td>1851100009</td>
+                           <td>Vishal Singh</td>
+                           <td>Civil</td>
+                           <td><a href="mailto:vishalvns20@gmail.com" target="_blank">vishalvns20@gmail.com</a></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+            <div id="menu3" class="container tab-pane fade">
+               <br>
+               <center>
+                  <h2>Electrical Engg.</h2>
+               </center>
+               <p>Note : Type Branch name and something in the input field to search the table for name, roll no or emails:</p>
+               <input class="form-control" id="myInput3" type="text" placeholder="Search..">
+               <br>
+               <br>
+               <table class="table table-bordered table-striped">
+                  <thead>
+                     <tr>
+                        <th>S.No</th>
+                        <th>Roll.No.</th>
+                        <th>Name</th>
+                        <th>Branch</th>
+                        <th>Email</th>
+                     </tr>
+                  </thead>
+                  <tbody id="myTable3">
+                     <tr>
+                        <td>1.</td>
+                        <td>1851131001</td>
+                        <td>Abhishek Bhardwaj</td>
+                        <td>ECE</td>
+                        <td><a href="mailto:mk7462164@gmail.com" target="_blank">mk7462164@gmail.com</a></td>
+                     </tr>
+                     <tr>
+                        <td>2.</td>
+                        <td>1851131002</td>
+                        <td>Ankit Saini</td>
+                        <td>ECE</td>
+                        <td><a href="mailto:sainiankit10098@gmail.com" target="_blank">sainiankit10098@gmail.com</a></td>
+                     </tr>
+                     <tr>
+                        <td>3.</td>
+                        <td>1851131003</td>
+                        <td>Atharv Mishra</td>
+                        <td>ECE</td>
+                        <td><a href="mailto:atharvmishra.india@gmail.com" target="_blank">atharvmishra.india@gmail.com</a></td>
+                     </tr>
+                     <tr>
+                        <td>4.</td>
+                        <td>1851131004</td>
+                        <td>Daksh Tiwari</td>
+                        <td>ECE</td>
+                        <td><a href="mailto:tiwaridaksh1999@gmail.com" target="_blank">tiwaridaksh1999@gmail.com</a></td>
+                     </tr>
+                     <tr>
+                        <td>5.</td>
+                        <td>1851131005</td>
+                        <td>Mahak Verma</td>
+                        <td>ECE</td>
+                        <td><a href="mailto:mahakverma0987@gmail.com" target="_blank">mahakverma0987@gmail.com</a></td>
+                     </tr>
+                     <tr>
+                        <td>6.</td>
+                        <td>1851131006</td>
+                        <td>Pawan Soni</td>
+                        <td>ECE</td>
+                        <td><a href="mailto:pawan1soni111@gmail.com" target="_blank">pawan1soni111@gmail.com</a></td>
+                     </tr>
+                     <tr>
+                        <td>7.</td>
+                        <td>1851131007</td>
+                        <td>Sachin Sharma</td>
+                        <td>ECE</td>
+                        <td><a href="mailto:sach0793@gmail.com" target="_blank">sach0793@gmail.com</a></td>
+                     </tr>
+                     <tr>
+                        <td>8.</td>
+                        <td>1851131008</td>
+                        <td>Saket Kumar Sinha</td>
+                        <td>ECE</td>
+                        <td><a href="mailto:Saket8271@gmail.com" target="_blank">Saket8271@gmail.com</a></td>
+                     </tr>
+                     <tr>
+                        <td>9.</td>
+                        <td>1851131009</td>
+                        <td>Satya PrakashChaudhary</td>
+                        <td>ECE</td>
+                        <td><a href="mailto:csatyaprakash82@gmail.com" target="_blank">csatyaprakash82@gmail.com</a></td>
+                     </tr>
+                     <tr>
+                        <td>10.</td>
+                        <td>1851131010</td>
+                        <td>Shivam KumarChaudhary</td>
+                        <td>ECE</td>
+                        <td><a href="mailto:chaudharyshiv2000@gmail.com" target="_blank">chaudharyshiv2000@gmail.com</a></td>
+                     </tr>
+                     <tr>
+                        <td>11.</td>
+                        <td>1851131012</td>
+                        <td>Vaishnavi Parihar</td>
+                        <td>ECE</td>
+                        <td><a href="mailto:vaishnavi19072000@gmail.com" target="_blank">vaishnavi19072000@gmail.com</a></td>
+                     </tr>
+                     <tr>
+                        <td>12.</td>
+                        <td>1851131013</td>
+                        <td>Vinay Agrawal</td>
+                        <td>ECE</td>
+                        <td><a href="mailto:vinayjune1999@gmail.com" target="_blank">vinayjune1999@gmail.com</a></td>
+                     </tr>
+                     <tr>
+                        <td>13.</td>
+                        <td>1851131014</td>
+                        <td>Vivek Vikram Singh</td>
+                        <td>ECE</td>
+                        <td><a href="mailto:vinekvikramsingh.99@gmail.com" target="_blank">vinekvikramsingh.99@gmail.com</a></td>
+                     </tr>
+                     <tr>
+                        <td>14.</td>
+                        <td>1851131015</td>
+                        <td>Yash Kumar Soni</td>
+                        <td>ECE</td>
+                        <td><a href="mailto:yashsoni0107@gmail.com" target="_blank">yashsoni0107@gmail.com</a></td>
+                     </tr>
+                     <tr>
+                        <td>15.</td>
+                        <td>1851131016</td>
+                        <td>Yash Pratap Singh Chauhan</td>
+                        <td>ECE</td>
+                        <td><a href="mailto:yshprtapsingh1234@gmail.com" target="_blank">yshprtapsingh1234@gmail.com</a></td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <div id="menu4" class="container tab-pane fade">
+               <br>
+               <center>
+                  <h2>B.Arch.</h2>
+               </center>
+               <p>Note : Type Branch name and something in the input field to search the table for name, roll no or emails:</p>
+               <input class="form-control" id="myInput4" type="text" placeholder="Search..">
+               <br>
+               <table class="table table-bordered table-striped">
+                  <thead>
+                     <tr>
+                        <th>S.No.</th>
+                        <th>Roll No.</th>
+                        <th>Name</th>
+                        <th>Branch</th>
+                        <th>Email</th>
+                     </tr>
+                  </thead>
+                  <tbody id="myTable4">
+                     <tr>
+                        <td>1.</td>
+                        <td>1851181001</td>
+                        <td>Adarsh Pratap Shahi</td>
+                        <td>B.Arch</td>
+                        <td><a href="mailto:barch18001@glbajajgroup.org" target="_blank">barch18001@glbajajgroup.org</a></td>
+                     </tr>
+                     <tr>
+                        <td>2.</td>
+                        <td>1851181002</td>
+                        <td>Anubhav Maurya</td>
+                        <td>B.Arch</td>
+                        <td><a href="mailto:barch18002@glbajajgroup.org" target="_blank">barch18002@glbajajgroup.org</a></td>
+                     </tr>
+                     <tr>
+                        <td>3.</td>
+                        <td>1851181003</td>
+                        <td>Asma Farooque</td>
+                        <td>B.Arch</td>
+                        <td><a href="mailto:barch18003@glbajajgroup.org" target="_blank">barch18003@glbajajgroup.org</a></td>
+                     </tr>
+                     <tr>
+                        <td>4.</td>
+                        <td>1851181004</td>
+                        <td>Beauty Singh</td>
+                        <td>B.Arch</td>
+                        <td><a href="mailto:barch18004@glbajajgroup.org" target="_blank">barch18004@glbajajgroup.org</a></td>
+                     </tr>
+                     <tr>
+                        <td>5.</td>
+                        <td>1851181005</td>
+                        <td>Gaurav Pratap Singh</td>
+                        <td>B.Arch</td>
+                        <td><a href="mailto:barch18005@glbajajgroup.org" target="_blank">barch18005@glbajajgroup.org</a></td>
+                     </tr>
+                     <tr>
+                        <td>6.</td>
+                        <td>1851181006</td>
+                        <td>Harshita Saini</td>
+                        <td>B.Arch</td>
+                        <td><a href="mailto:barch18006@glbajajgroup.org" target="_blank">barch18006@glbajajgroup.org</a></td>
+                     </tr>
+                     <tr>
+                        <td>7.</td>
+                        <td>1851181007</td>
+                        <td>Himanshu Jain</td>
+                        <td>B.Arch</td>
+                        <td><a href="mailto:barch18007@glbajajgroup.org" target="_blank">barch18007@glbajajgroup.org</a></td>
+                     </tr>
+                     <tr>
+                        <td>8.</td>
+                        <td>1851181008</td>
+                        <td>Jay Agrawal</td>
+                        <td>B.Arch</td>
+                        <td><a href="mailto:barch18008@glbajajgroup.org" target="_blank">barch18008@glbajajgroup.org</a></td>
+                     </tr>
+                     <tr>
+                        <td>9.</td>
+                        <td>1851181009</td>
+                        <td>Krati Goswami</td>
+                        <td>B.Arch</td>
+                        <td><a href="mailto:barch18009@glbajajgroup.org" target="_blank">barch18009@glbajajgroup.org</a></td>
+                     </tr>
+                     <tr>
+                        <td>10.</td>
+                        <td>1851181010</td>
+                        <td>Raksha Shukla</td>
+                        <td>B.Arch</td>
+                        <td><a href="mailto:barch18010@glbajajgroup.org" target="_blank">barch18010@glbajajgroup.org</a></td>
+                     </tr>
+                     <tr>
+                        <td>11.</td>
+                        <td>1851181011</td>
+                        <td>Riya Sharma</td>
+                        <td>B.Arch</td>
+                        <td><a href="mailto:barch18011@glbajajgroup.org" target="_blank">barch18011@glbajajgroup.org</a></td>
+                     </tr>
+                     <tr>
+                        <td>12.</td>
+                        <td>1851181012</td>
+                        <td>Satyam Saxena</td>
+                        <td>B.Arch</td>
+                        <td><a href="mailto:barch18012@glbajajgroup.org" target="_blank">barch18012@glbajajgroup.org</a></td>
+                     </tr>
+                     <tr>
+                        <td>13.</td>
+                        <td>1851181013</td>
+                        <td>Sheetal Sunar</td>
+                        <td>B.Arch</td>
+                        <td><a href="mailto:barch18013@glbajajgroup.org" target="_blank">barch18013@glbajajgroup.org</a></td>
+                     </tr>
+                     <tr>
+                        <td>14.</td>
+                        <td>1851181014</td>
+                        <td>Shrishty Srivastava</td>
+                        <td>B.Arch</td>
+                        <td><a href="mailto:barch18014@glbajajgroup.org" target="_blank">barch18014@glbajajgroup.org</a></td>
+                     </tr>
+                     <tr>
+                        <td>15.</td>
+                        <td>1851181015</td>
+                        <td>Sonal Juneja</td>
+                        <td>B.Arch</td>
+                        <td><a href="mailto:barch18015@glbajajgroup.org" target="_blank">barch18015@glbajajgroup.org</a></td>
+                     </tr>
+                     <tr>
+                        <td>16.</td>
+                        <td>1851181016</td>
+                        <td>Utkarsh Varshney</td>
+                        <td>B.Arch</td>
+                        <td><a href="mailto:barch18016@glbajajgroup.org" target="_blank">barch18016@glbajajgroup.org</a></td>
+                     </tr>
+                     <tr>
+                        <td>17.</td>
+                        <td>1851181017</td>
+                        <td>Yash Gupta</td>
+                        <td>B.Arch</td>
+                        <td><a href="mailto:barch18017@glbajajgroup.org" target="_blank">barch18017@glbajajgroup.org</a></td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <div id="menu5" class="container tab-pane fade">
+               <br>
+               <center>
+                  <h2>Coming Soon.....</h2>
+               </center>
+               <p>Note : Type name and something in the input field to search the table for name,emails:</p>
+               <input class="form-control" id="myInput4" type="text" placeholder="Search..">
+               <br>
+            </div>
+            <div id="menu6" class="container tab-pane fade">
+               <br>
+               <center>
+                  <h2>Course.</h2>
+               </center>
+               <p>Note : Type Branch name and something in the input field to search the table for name, roll no or emails:</p>
+               <input class="form-control" id="myInput5" type="text" placeholder="Search...">
+               <br>
+               <center>
+                  <h3>Semester - 1&2</h3>
+               </center>
+               <br>
+               <table class="table table-bordered table-striped">
+                  <thead>
+                     <tr>
+                        <th>S.No.</th>
+                        <th>Subject Code.</th>
+                        <th>Subject Name</th>
+                        <th>Semester</th>
+                        <th>Reference</th>
+                     </tr>
+                  </thead>
+                  <tbody id="myTable5">
+                     <tr>
+                        <td>1.</td>
+                        <td>KAS101</td>
+                        <td>Engineering Physics</td>
+                        <td>1st</td>
+                        <td><a class="btn disabled" href="#">Download</a></td>
+                     </tr>
+                     <tr>
+                        <td>2.</td>
+                        <td>KAS102</td>
+                        <td>Engineering Chemistry</td>
+                        <td>1st</td>
+                        <td><a class="btn disabled" href="#">Download</a></td>
+                     </tr>
+                     <tr>
+                        <td>3.</td>
+                        <td>KAS103</td>
+                        <td>Engineering Mathematics-1</td>
+                        <td>1st</td>
+                        <td><a class="btn disabled" href="#">Download</a></td>
+                     </tr>
+                     <tr>
+                        <td>4.</td>
+                        <td>KEE101</td>
+                        <td>Basic Electrical Engineering</td>
+                        <td>1st</td>
+                        <td><a class="btn disabled" href="#">Download</a></td>
+                     </tr>
+                     <tr>
+                        <td>5.</td>
+                        <td>KCS101</td>
+                        <td>Programming For Problem Solving</td>
+                        <td>1st</td>
+                        <td><a class="btn disabled" href="#">Download</a></td>
+                     </tr>
+                     <tr>
+                        <td>6.</td>
+                        <td>KAS203</td>
+                        <td>Engineering Mathematics-2</td>
+                        <td>2nd</td>
+                        <td><a class="btn disabled" href="#">Download</a></td>
+                     </tr>
+                  </tbody>
+               </table>
+               <br>
+               <table class="table table-bordered table-striped">
+                  <thead>
+                     <tr>
+                        <th>S.No.</th>
+                        <th>Subject Code.</th>
+                        <th>Subject Name</th>
+                        <th>Semester</th>
+                     </tr>
+                  </thead>
+                  <tbody id="myTable5">
+                     <tr>
+                        <td>1.</td>
+                        <td>KAS151</td>
+                        <td>Engineering Physics Lab</td>
+                        <td>1st</td>
+                     </tr>
+                     <tr>
+                        <td>2.</td>
+                        <td>KAS152</td>
+                        <td>Engineering Chemistry Lab</td>
+                        <td>1st</td>
+                     </tr>
+                     <tr>
+                        <td>3.</td>
+                        <td>KEE151</td>
+                        <td>Basic Electrical Engineering Lab</td>
+                        <td>1st</td>
+                     </tr>
+                     <tr>
+                        <td>4.</td>
+                        <td>KCS151</td>
+                        <td>Programming For Problem Solving</td>
+                        <td>1st</td>
+                     </tr>
+                     <tr>
+                        <td>5.</td>
+                        <td>KCE151</td>
+                        <td>Engineering Graphics $ Design Lab</td>
+                        <td>1st</td>
+                     </tr>
+                     <tr>
+                        <td>6.</td>
+                        <td>KMC101</td>
+                        <td>AI Engineering</td>
+                        <td>1st</td>
+                     </tr>
+                     <tr>
+                        <td>7.</td>
+                        <td>KNC101</td>
+                        <td>Soft Skills I</td>
+                        <td>1st</td>
+                     </tr>
+                     <tr>
+                        <td>8.</td>
+                        <td>KWS251</td>
+                        <td>Mechanical Workshop Lab</td>
+                        <td>2nd</td>
+                     </tr>
+                     <tr>
+                        <td>9.</td>
+                        <td>KNC201</td>
+                        <td>Soft Skills II</td>
+                        <td>2nd</td>
+                     </tr>
+                  </tbody>
+               </table>
+               <br>
+               <center>
+                  <h2>Semester - 3&4</h2>
+               </center>
+               <table class="table table-bordered table-striped">
+                  <thead>
+                     <tr>
+                        <th>S.No.</th>
+                        <th>Subject Code.</th>
+                        <th>Subject Name</th>
+                        <th>Semester</th>
+                        <th>Reference</th>
+                     </tr>
+                  </thead>
+                  <tbody id="myTable5">
+                     <tr>
+                        <td>1.</td>
+                        <td>KAS302</td>
+                        <td>Math IV</td>
+                        <td>3rd</td>
+                        <td><a class="btn disabled" href="#">Download</a></td>
+                     </tr>
+                     <tr>
+                        <td>2.</td>
+                        <td>KAS301</td>
+                        <td>Technical Communication</td>
+                        <td>3rd</td>
+                        <td><a class="btn disabled" href="#">Download</a></td>
+                     </tr>
+                     <tr>
+                        <td>3.</td>
+                        <td>KCS301</td>
+                        <td>Data Structures</td>
+                        <td>3rd</td>
+                        <td><a class="btn disabled" href="#">Download</a></td>
+                     </tr>
+                     <tr>
+                        <td>4.</td>
+                        <td>KCS302</td>
+                        <td>Computer Ogranization and Architecture</td>
+                        <td>3rd</td>
+                        <td><a class="btn disabled" href="#">Download</a></td>
+                     </tr>
+                     <tr>
+                        <td>5.</td>
+                        <td>KCS303</td>
+                        <td>Discrete Structures & Theory Of Logic</td>
+                        <td>3rd</td>
+                        <td><a class="btn disabled" href="#">Download</a></td>
+                     </tr>
+                     <tr>
+                        <td>6.</td>
+                        <td>KVE401</td>
+                        <td>Universal Human Values</td>
+                        <td>4th</td>
+                        <td><a class="btn disabled" href="#">Download</a></td>
+                     </tr>
+                     <tr>
+                        <td>7.</td>
+                        <td>KCS401</td>
+                        <td>Operating System</td>
+                        <td>4th</td>
+                        <td><a class="btn disabled" href="#">Download</a></td>
+                     </tr>
+                     <tr>
+                        <td>8.</td>
+                        <td>KCS402</td>
+                        <td>Theory Of automata and Formal Languages</td>
+                        <td>4th</td>
+                        <td><a class="btn disabled" href="#">Download</a></td>
+                     </tr>
+                     <tr>
+                        <td>9.</td>
+                        <td>KCS403</td>
+                        <td>Microprocessor</td>
+                        <td>4th</td>
+                        <td><a class="btn disabled" href="#">Download</a></td>
+                     </tr>
+                  </tbody>
+               </table>
+               <br>
+               <table class="table table-bordered table-striped">
+                  <thead>
+                     <tr>
+                        <th>S.No.</th>
+                        <th>Subject Code.</th>
+                        <th>Subject Name</th>
+                        <th>Semester</th>
+                     </tr>
+                  </thead>
+                  <tbody id="myTable5">
+                     <tr>
+                        <td>1.</td>
+                        <td>KCS351</td>
+                        <td>Data Structures using C Lab</td>
+                        <td>3rd</td>
+                     </tr>
+                     <tr>
+                        <td>2.</td>
+                        <td>KCS352</td>
+                        <td>Computer Organization Lab</td>
+                        <td>3rd</td>
+                     </tr>
+                     <tr>
+                        <td>3.</td>
+                        <td>KCS353</td>
+                        <td>Discrete Structures and Logic Lab</td>
+                        <td>3rd</td>
+                     </tr>
+                     <tr>
+                        <td>4.</td>
+                        <td>KCS354</td>
+                        <td>Mini Project or Internship Assessment</td>
+                        <td>3rd</td>
+                     </tr>
+                     <tr>
+                        <td>5.</td>
+                        <td>KNC301</td>
+                        <td>Computer System Security Lab</td>
+                        <td>3rd</td>
+                     </tr>
+                     <tr>
+                        <td>6.</td>
+                        <td>KCS451</td>
+                        <td>Operating System Lab</td>
+                        <td>4th</td>
+                     </tr>
+                     <tr>
+                        <td>7.</td>
+                        <td>KCS452</td>
+                        <td>Microprocessor Lab</td>
+                        <td>4th</td>
+                     </tr>
+                     <tr>
+                        <td>8.</td>
+                        <td>KCS453</td>
+                        <td>Python language and Programming Lab</td>
+                        <td>4th</td>
+                     </tr>
+                     <tr>
+                        <td>9.</td>
+                        <td>KNC402</td>
+                        <td>Python Programming</td>
+                        <td>4th</td>
+                     </tr>
+                  </tbody>
+               </table>
+               <br>
+               <center>
+                  <h2>Semester - 5&6</h2>
+               </center>
+               <table class="table table-bordered table-striped">
+                  <thead>
+                     <tr>
+                        <th>S.No.</th>
+                        <th>Subject Code.</th>
+                        <th>Subject Name</th>
+                        <th>Semester</th>
+                        <th>Reference</th>
+                     </tr>
+                  </thead>
+                  <tbody id="myTable5">
+                     <tr>
+                        <td>1.</td>
+                        <td>KCS501</td>
+                        <td>Database Management System</td>
+                        <td>5th</td>
+                        <td><a class="btn disabled" href="#">Download</a></td>
+                     </tr>
+                     <tr>
+                        <td>2.</td>
+                        <td>KCS502</td>
+                        <td>Compiler Design</td>
+                        <td>5th</td>
+                        <td><a class="btn disabled" href="#">Download</a></td>
+                     </tr>
+                     <tr>
+                        <td>3.</td>
+                        <td>KCS503</td>
+                        <td>Design and Analysis of Algorithms</td>
+                        <td>5th</td>
+                        <td><a class="btn disabled" href="#">Download</a></td>
+                     </tr>
+                     <tr>
+                        <td>4.</td>
+                        <td>-</td>
+                        <td>Departmental Elective-I</td>
+                        <td>5th</td>
+                        <td><a class="btn disabled" href="#">Download</a></td>
+                     </tr>
+                     <tr>
+                        <td>5.</td>
+                        <td>-</td>
+                        <td>Departmental Elective-II</td>
+                        <td>5th</td>
+                        <td><a class="btn disabled" href="#">Download</a></td>
+                     </tr>
+                     <tr>
+                        <td>6.</td>
+                        <td>KCS601</td>
+                        <td>Software Engineering</td>
+                        <td>6th</td>
+                        <td><a class="btn disabled" href="#">Download</a></td>
+                     </tr>
+                     <tr>
+                        <td>7.</td>
+                        <td>KCS602</td>
+                        <td>Web Technology</td>
+                        <td>6th</td>
+                        <td><a class="btn disabled" href="#">Download</a></td>
+                     </tr>
+                     <tr>
+                        <td>8.</td>
+                        <td>KCS603</td>
+                        <td>Computer Networks</td>
+                        <td>6th</td>
+                        <td><a class="btn disabled" href="#">Download</a></td>
+                     </tr>
+                     <tr>
+                        <td>9.</td>
+                        <td>-</td>
+                        <td>Departmental Elective-III</td>
+                        <td>6th</td>
+                        <td><a class="btn disabled" href="#">Download</a></td>
+                     </tr>
+                     <tr>
+                        <td>10.</td>
+                        <td>KNC601</td>
+                        <td>Constitution of India, Law and Engineering</td>
+                        <td>5th</td>
+                        <td><a class="btn disabled" href="#">Download</a></td>
+                     </tr>
+                     <tr>
+                        <td>11.</td>
+                        <td>KNC602</td>
+                        <td>Indian Tradition, Culture and Society</td>
+                        <td>6th</td>
+                        <td><a class="btn disabled" href="#">Download</a></td>
+                     </tr>
+                  </tbody>
+               </table>
+               <br>
+               <table class="table table-bordered table-striped">
+                  <thead>
+                     <tr>
+                        <th>S.No.</th>
+                        <th>Subject Code.</th>
+                        <th>Subject Name</th>
+                        <th>Semester</th>
+                     </tr>
+                  </thead>
+                  <tbody id="myTable5">
+                     <tr>
+                        <td>1.</td>
+                        <td>KCS551</td>
+                        <td>Database Management System Lab</td>
+                        <td>5th</td>
+                     </tr>
+                     <tr>
+                        <td>2.</td>
+                        <td>KCS552</td>
+                        <td>Compiler Design Lab</td>
+                        <td>5th</td>
+                     </tr>
+                     <tr>
+                        <td>3.</td>
+                        <td>KCS553</td>
+                        <td>Design and Analysis of Algorithms Lab</td>
+                        <td>5th</td>
+                     </tr>
+                     <tr>
+                        <td>4.</td>
+                        <td>KCS554</td>
+                        <td>Mini Project or Internship Assessment*</td>
+                        <td>5th</td>
+                     </tr>
+                     <tr>
+                        <td>5.</td>
+                        <td>KCS651</td>
+                        <td>Software Engineering Lab</td>
+                        <td>6th</td>
+                     </tr>
+                     <tr>
+                        <td>6.</td>
+                        <td>KCS652</td>
+                        <td>Web Technology Lab</td>
+                        <td>6th</td>
+                     </tr>
+                     <tr>
+                        <td>7.</td>
+                        <td>KCS653</td>
+                        <td>Computer Networks Lab</td>
+                        <td>6th</td>
+                     </tr>
+                  </tbody>
+               </table>
+               <br>
+               <center>
+                  <h2>Semester - 7&8(Coming Soon...)</h2>
+               </center>
+               <table class="table table-bordered table-striped">
+                  <thead>
+                     <tr>
+                        <th>S.No.</th>
+                        <th>Subject Code.</th>
+                        <th>Subject Name</th>
+                        <th>Semester</th>
+                        <th>Reference</th>
+                     </tr>
+                  </thead>
+                  <tbody id="myTable5">
+                     <tr>
+                        <td>1.</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+      </div>
+      <script>
+         $(document).ready(function(){
+           $("#myInput").on("keyup", function() {
+             var value = $(this).val().toLowerCase();
+             $("#myTable tr").filter(function() {
+               $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+             });
+           });
+         });
+         $(document).ready(function(){
+           $("#myInput1").on("keyup", function() {
+             var value = $(this).val().toLowerCase();
+             $("#myTable1 tr").filter(function() {
+               $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+             });
+           });
+         });
+         $(document).ready(function(){
+           $("#myInput2").on("keyup", function() {
+             var value = $(this).val().toLowerCase();
+             $("#myTable2 tr").filter(function() {
+               $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+             });
+           });
+         });
+         $(document).ready(function(){
+           $("#myInput3").on("keyup", function() {
+             var value = $(this).val().toLowerCase();
+             $("#myTable3 tr").filter(function() {
+               $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+             });
+           });
+         });
+         $(document).ready(function(){
+           $("#myInput4").on("keyup", function() {
+             var value = $(this).val().toLowerCase();
+             $("#myTable4 tr").filter(function() {
+               $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+             });
+           });
+         });
+         $(document).ready(function(){
+           $("#myInput5").on("keyup", function() {
+             var value = $(this).val().toLowerCase();
+             $("#myTable5 tr").filter(function() {
+               $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+             });
+           });
+         });
+      </script>
+   </body>
+</html>
+
+
+<!-- https://girish-1-goyal.github.io/MYPORTFOLIO/ -->
